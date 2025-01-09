@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\MajorCategory;
 use App\Models\Product;
+use App\Models\Review;
 
 class WebController extends Controller
 {
@@ -19,6 +20,6 @@ class WebController extends Controller
 
     $recommend_products = Product::where('recommend_flag', true)->take(3)->get();
 
-    return view('web.index', compact('major_categories', 'categories', 'recently_products', 'recommend_products'));
+     return view('web.index', compact('major_categories', 'categories', 'recently_products', 'recommend_products'));
   }
 }
