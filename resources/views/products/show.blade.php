@@ -16,6 +16,9 @@
                 <h1 class="">
                     {{$product->name}}
                 </h1>
+                <p>
+                  <span class="star-rating" data-rate="{{ round(($product->reviews->avg('score')) * 2) / 2 }}"></span><span class="num-rating"> {{ round($product->reviews->avg('score'), 1) }}</span>
+                </p>
                 <p class="">
                     {{$product->description}}
                 </p>
@@ -75,6 +78,9 @@
         <div class="offset-1 col-11">
             <hr class="w-100">
             <h3 class="float-left">カスタマーレビュー</h3>
+            <p>
+                <span class="star-rating" data-rate="{{ round(($product->reviews->avg('score')) * 2) / 2 }}"></span><span class="num-rating"> {{ round($product->reviews->avg('score'), 1) }}</span>
+            </p>
         </div>
 
         <div class="offset-1 col-10">

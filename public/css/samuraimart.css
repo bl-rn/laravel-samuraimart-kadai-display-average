@@ -186,3 +186,99 @@ label {
 th, td {
   background-color: #f8fafc !important;
 }
+
+.star-rating {
+  position: relative;
+}
+.star-rating::before {
+  content: "★★★★★";
+  color: lightgray;
+}
+.star-rating[data-rate="5"]::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  content: "★★★★★";
+  color: #0fbe9f;
+}
+.star-rating[data-rate="4.5"]::after {
+  position: absolute;
+  left: 0;
+  width: 90%;
+  overflow: hidden;
+  content: "★★★★★";
+  color: #0fbe9f;
+}
+.star-rating[data-rate="4"]::after {
+  position: absolute;
+  left: 0;
+  width: 80%;
+  overflow: hidden;
+  content: "★★★★★";
+  color: #0fbe9f;
+}
+.star-rating[data-rate="3.5"]::after {
+  position: absolute;
+  left: 0;
+  width: 70%;
+  overflow: hidden;
+  content: "★★★★★";
+  color: #0fbe9f;
+}
+.star-rating[data-rate="3"]::after {
+  position: absolute;
+  left: 0;
+  width: 60%;
+  overflow: hidden;
+  content: "★★★★★";
+  color: #0fbe9f;
+}
+.star-rating[data-rate="2.5"]::after {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  content: "★★★★★";
+  color: #0fbe9f;
+}
+.star-rating[data-rate="2"]::after {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  overflow: hidden;
+  content: "★★★★★";
+  color: #0fbe9f;
+}
+.star-rating[data-rate="1.5"]::after {
+  position: absolute;
+  left: 0;
+  width: 30%;
+  overflow: hidden;
+  content: "★★★★★";
+  color: #0fbe9f;
+}
+.star-rating[data-rate="1"]::after {
+  position: absolute;
+  left: 0;
+  width: 20%;
+  overflow: hidden;
+  content: "★★★★★";
+  color: #0fbe9f;
+}
+.star-rating[data-rate="0.5"]::after {
+  position: absolute;
+  left: 0;
+  width: 10%;
+  overflow: hidden;
+  content: "★★★★★";
+  color: #0fbe9f;
+}
+.star-rating[data-rate="0"]::after {
+  position: absolute;
+  left: 0;
+  width: 0%;
+  overflow: hidden;
+  content: "★★★★★";
+  color: #0fbe9f;
+}
